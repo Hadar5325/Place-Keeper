@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user-prefs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="greet-user"></header>
+    <form class="form" onsubmit="submitFile(event)">
+        <label for="first-name" class="lable">Enter your first name</label>
+        <input type="text" class="input first-name" required>
+        <label for="background-color" class="lable">background-color</label>
+        <input type="color" class="input background-color">
+        <label for="text-color" class="lable">text-color</label>
+        <input type="color" class="input text-color">
+        <label for="zoom-factor" class="lable">zoom-factor</label>
+        <input type="range" min="1" max="21" value="10" oninput="onInputSlider()" class="input zoom-factor">
+        <p class="span-class">value: <span class="val-zoom-factor">10</span></p>
+        <label for="map-start-location" class="lable">map start location</label>
+        <input type="text" class="input map-start-location">
+        <input type="submit" class="btn-submit">
+    </form>
+
+    <a href="index.html">Back to home page</a>
+
+    <script src="./services/utilService.js"></script>
+    <script src="./services/placeService.js"></script>
+    <script src="./services/userService.js"></script>
+    <script src="./services/storageService.js"></script>
+    <script src="controller.js"></script>
+</body>
+</html>

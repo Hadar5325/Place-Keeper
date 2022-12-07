@@ -1,0 +1,13 @@
+
+body{
+    background-color: lightpink;
+
+}
+.lable, .span-class{
+    text-align: center;
+    display: block
+}
+.input{
+    margin: auto;
+    display: block;
+}
